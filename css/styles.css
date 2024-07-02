@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    color: #241623;
+    color: #39566A;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -39,7 +39,7 @@ body {
 }
 
 h1 {
-    color: #000000;
+    color: #39566A;
     font-weight: 700;
     text-align: center;
 }
@@ -58,7 +58,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #241623;
+    color: #39566A;
     font-weight: bold;
 }
 
