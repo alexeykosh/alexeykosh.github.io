@@ -62,12 +62,30 @@ nav ul li a {
     font-weight: bold;
 }
 
+.profile-pic {
+    position: relative; /* Ensure the container is positioned relative */
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
 .profile-pic img {
+    position: absolute; /* Positioning the images absolutely */
+    top: 0;
+    left: 0;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     display: block;
-    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-pic .hover-image {
+    opacity: 0; /* Initially hidden */
+}
+
+.profile-pic:hover .hover-image {
+    opacity: 1; /* Display on hover */
 }
 
 a {
@@ -101,7 +119,7 @@ p {
 
 .publication h2 {
     font-size: 1.1em;
-    color: #000000;
+    color: #39566A;
     font-weight: 700;
     margin: 10px 0 5px;
 }
