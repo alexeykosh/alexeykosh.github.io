@@ -8,6 +8,8 @@ body {
     color: #241623;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -16,6 +18,7 @@ body {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
 }
 
 .sidebar {
@@ -98,4 +101,11 @@ p {
 .publication p {
     font-size: 0.9em;
     margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    color: #807C38;
 }
