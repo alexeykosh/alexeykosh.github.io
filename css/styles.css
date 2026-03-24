@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+
+:root {
+    --bg: #ece9ea;
+    --panel: transparent;
+    --text: #2f2f2f;
+    --muted: #707070;
+    --accent: #292929;
+    --accent-soft: #e3e0e1;
+    --border: #cac7c8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cardo', serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 860px;
+    padding: 0;
+    flex: 1;
+    background: var(--panel);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 36px;
+}
+
+.sidebar {
+    flex: 0 0 168px;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+h1 {
+    color: var(--text);
+    font-family: 'Cardo', serif;
+    font-size: clamp(2rem, 2.7vw, 2.35rem);
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0 0 8px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--muted);
+    margin: 0 0 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 26px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 4px 18px 4px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: 'Cardo', serif;
+    font-weight: 500;
+    font-size: 1.02rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.profile-pic {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 6px auto 20px;
+}
+
+.profile-pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: block;
+    border: 0;
+    box-shadow: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-pic .hover-image {
+    opacity: 0;
+}
+
+.profile-pic:hover .hover-image {
+    opacity: 1;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.75;
+    text-align: left;
+    margin: 0 0 18px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info a {
+    display: block;
+    margin: 7px 0;
+    text-align: left;
+    font-family: 'Cardo', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+}
+
+.content {
+    text-align: left;
+}
+
+.info-section {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.info-section h3 {
+    margin: 0 0 12px;
+    font-family: 'Cardo', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--text);
+}
+
+.publication {
+    margin: 0;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+}
+
+.publication h2 {
+    font-size: 1.12rem;
+    color: var(--text);
+    font-family: 'Cardo', serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 0 10px;
+}
+
+.publication p {
+    font-size: 0.95rem;
+    margin: 4px 0;
+}
+
+embed {
+    border: 1px solid var(--border);
+    border-radius: 0;
+    background: #f8f7f7;
+    min-height: 70vh;
+}
+
+footer {
+    text-align: center;
+    padding: 16px 0 4px;
+    font-size: 0.86rem;
+    color: var(--muted);
+    width: 100%;
+    margin-top: 22px;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 18px;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-info a {
+        text-align: left;
+    }
+
+    p {
+        font-size: 0.98rem;
+    }
+
+    embed {
+        min-height: 58vh;
+    }
+}
