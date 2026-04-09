@@ -165,6 +165,34 @@ p {
     text-align: left;
 }
 
+.content > h2 {
+    font-family: 'Cardo', serif;
+    font-size: clamp(1.35rem, 2vw, 1.6rem);
+    font-style: normal;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    margin: 0 0 14px;
+}
+
+.content > h2:not(:first-child) {
+    margin-top: 32px;
+}
+
+.content > h3 {
+    font-family: 'Cardo', serif;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+    margin: 24px 0 12px;
+}
+
+.content > h2 + h3 {
+    margin-top: 0;
+}
+
 .info-section {
     margin-top: 28px;
     padding-top: 16px;
