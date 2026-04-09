@@ -8,7 +8,7 @@
     --accent: #292929;
     --accent-soft: #e3e0e1;
     --border: #cac7c8;
-    --section-heading-size: 1.12rem;
+    --section-heading-size: 1.06rem;
     --subsection-heading-size: 0.98rem;
 }
 
@@ -223,32 +223,35 @@ p {
 }
 
 .publication-label {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.22rem 0.58rem;
-    border-radius: 999px;
+    display: inline;
     font-family: 'Cardo', serif;
-    font-size: 0.64rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    line-height: 1;
-    color: #fff8f4;
-    vertical-align: middle;
-    margin-left: 0.5rem;
+    font-size: 0.72em;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: inherit;
+    vertical-align: baseline;
+    margin-left: 0.35rem;
     white-space: nowrap;
 }
 
+.publication-label::before {
+    content: "[";
+}
+
+.publication-label::after {
+    content: "]";
+}
+
 .publication-label-article {
-    background: #3f8f5a;
+    color: #3f8f5a;
 }
 
 .publication-label-proceedings {
-    background: #d9782d;
+    color: #d9782d;
 }
 
 .publication-label-thesis {
-    background: #bf4b63;
+    color: #bf4b63;
 }
 
 .publication h2 {
