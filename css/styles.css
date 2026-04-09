@@ -167,13 +167,18 @@ p {
     text-align: left;
 }
 
-.content > h2 {
+.content > h2,
+.publication h2 {
     font-family: 'Cardo', serif;
     font-size: var(--section-heading-size);
     font-style: normal;
     font-weight: 700;
     color: var(--text);
     letter-spacing: 0.01em;
+    line-height: 1.3;
+}
+
+.content > h2 {
     margin: 0 0 14px;
 }
 
@@ -217,41 +222,35 @@ p {
     background: transparent;
 }
 
-.publication-type {
-    margin: 0 0 10px;
-}
-
 .publication-label {
     display: inline-block;
-    padding: 0.28rem 0.7rem;
+    padding: 0.24rem 0.62rem;
     border-radius: 999px;
     font-family: 'Cardo', serif;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     line-height: 1;
-    color: #f7f3f2;
+    color: #fff8f4;
+    vertical-align: middle;
+    margin-left: 0.6rem;
+    white-space: nowrap;
 }
 
 .publication-label-article {
-    background: #596b5e;
+    background: #3f8f5a;
 }
 
 .publication-label-proceedings {
-    background: #8a5a3c;
+    background: #d9782d;
 }
 
 .publication-label-thesis {
-    background: #4f6670;
+    background: #bf4b63;
 }
 
 .publication h2 {
-    font-size: var(--section-heading-size);
-    color: var(--text);
-    font-family: 'Cardo', serif;
-    font-style: normal;
-    font-weight: 700;
     text-align: left;
     margin: 0 0 10px;
 }
