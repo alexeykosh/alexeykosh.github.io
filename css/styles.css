@@ -225,7 +225,7 @@ p {
 .publication-label {
     display: inline;
     font-family: 'Cardo', serif;
-    font-size: 0.72em;
+    font-size: inherit;
     font-weight: 600;
     letter-spacing: 0;
     line-height: inherit;
