@@ -5,7 +5,7 @@
     --panel: transparent;
     --text: #2f2f2f;
     --muted: #707070;
-    --accent: #292929;
+    --accent: #176b87;
     --accent-soft: #e3e0e1;
     --border: #cac7c8;
     --section-heading-size: 1.06rem;
@@ -89,7 +89,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--accent);
     font-family: 'Cardo', serif;
     font-weight: 500;
     font-size: 1.02rem;
